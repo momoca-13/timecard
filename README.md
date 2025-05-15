@@ -13,7 +13,7 @@
 
 #### 2.composer install  
 
-#### 3.「.env.example」ファイルを「.env」ファイルに命名を変更  
+#### 3.「.env.example」ファイルを「.env」ファイルに命名を変更 または、新しく.envファイルを作成  
 
 #### 4..envに以下の環境変数を追加  
 #### DB_CONNECTION=mysql
