@@ -32,6 +32,9 @@ php artisan migrate
 7.シーディングの実行  
 php artisan db:seed  
 
+8.シンボリックリンクの作成  
+php artisan storage:link  
+
 ## 使用技術（実行環境）  
 php 7.4.9  
 Laravel 8.83.8  
