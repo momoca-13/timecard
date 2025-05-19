@@ -15,6 +15,11 @@ class CreateApplicationsTable extends Migration
     {
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('attendance_id')->constrained();
+            $table->string('reason');
+            $table->date('date');
+            $table->tinyInteger('status');
             $table->timestamps();
         });
     }

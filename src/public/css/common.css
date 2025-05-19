@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .top-header {
+    width: 100%;
+    height: 82px;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    position: relative;
+  }
+  
+  .top-header__logo {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
