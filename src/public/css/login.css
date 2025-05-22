@@ -22,7 +22,7 @@
     
     .form__group {
       margin-bottom: 5px;
-      color: rgba(95, 95, 95, 1);
+      color: rgba(0, 0, 0, 1);
     }
     
     .form__group-title {
@@ -51,13 +51,22 @@
       height: 62px;
       border: none;
       border-radius: 5px;
-      background: rgba(255, 85, 85, 1);
+      background: rgba(0, 0, 0, 1);
       color: #fff;
       cursor: pointer;
       margin-top: 60px;
     }
     
     .login__link {
-      margin-top: 5px;
+      margin-top: 15px;
       text-align: center;
+    }
+
+    .register__link {
+      margin-top: 15px;
+    }
+
+    .register__button-submit {
+      text-decoration: none;
+      color: rgba(0, 115, 204, 1);
     }
