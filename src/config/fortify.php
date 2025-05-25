@@ -156,8 +156,4 @@ return [
             // 'window' => 0,
         ]),
     ],
-    
-    'redirects' => [
-        'logout' => config('app.url') . '/login'
-    ],
 ];
