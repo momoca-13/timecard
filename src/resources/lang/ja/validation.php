@@ -130,8 +130,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'remarks' => [
+            'required' => '備考を記入してください',
         ],
     ],
 

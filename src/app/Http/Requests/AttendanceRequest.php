@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+use Illuminate\Validation\Validator;
 
 class AttendanceRequest extends FormRequest
 {
@@ -13,7 +15,7 @@ class AttendanceRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +26,8 @@ class AttendanceRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'start_time' => 'required|date_format:H:i',
+             'end_time' => 'required|date_format:H:i',
         ];
     }
 }
