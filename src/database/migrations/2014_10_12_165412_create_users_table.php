@@ -17,8 +17,13 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
-            $table->unsignedTinyInteger('role');
+            $table->unsignedTinyInteger('role')
+                  ->default(0)
+                  ->comment('0: 一般, 1: 管理者');
             $table->string('password');
+            $table->unsignedTinyInteger('attendance_status')
+                  ->default(0)
+                  ->comment('0: 退勤, 1: 出勤, 2: 休憩');
             $table->timestamps();
         });
     }
