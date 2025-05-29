@@ -37,8 +37,8 @@ php artisan storage:link
 
 ## 使用技術（実行環境）  
 php 7.4.9  
-Laravel 8.83.29 
-mysql 8.0.26  
+Laravel 8.83.29  
+mysql 8.0.26 
 
 ## ER図  
 ![alt text](image.png)
