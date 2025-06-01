@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->unsignedTinyInteger('attendance_status')
                   ->default(0)
-                  ->comment('0: 退勤, 1: 出勤, 2: 休憩');
+                  ->comment('0: 勤務外, 1: 出勤, 2: 休憩 3: 退勤済');
             $table->timestamps();
         });
     }

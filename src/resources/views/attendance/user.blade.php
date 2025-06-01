@@ -15,22 +15,25 @@
         </div>
 
          <nav>
-            <ul class="header-nav">
-                @if (Auth::check())
-                <li class="header-nav__item">
-                <form class="form" action="/logout" method="post">
+           <ul class="top-header__nav">
+             <li class="top-header__list"><a href="http://localhost/attendance">勤怠</a></li>
+             <li class="top-header__list"><a href="http://localhost/attendance/list">勤怠一覧</a></li>
+             <li class="top-header__list"><a href="http://localhost/stamp_correction_request/list">申請</a></li>
+               @if (Auth::check())
+               <li class="top-header__list">
+                 <form class="form" action="/logout" method="post">
                     @csrf
-                  <button class="header-nav__button">ログアウト</button>
-                </form>
-                </li>
-                <li class="header-nav__item">
-                <a class="header-nav__link" href="/mypage">マイページ</a>
-              </li>
-                @endif
+                    <button class="header-nav__button">ログアウト</button>
+                 </form>
+               @endif
             </ul>
           </nav>
      </header>
-
+     <div class="display">
+       <p class="status">{{ $display_status }}</p>
+       <p class="date">{{$attendance_date}}({{$day_of_week}})</p>
+       <p class="hour">{{$hour}}:{{$minite}}</p>
+     </div>
      
 </body>
 </html>

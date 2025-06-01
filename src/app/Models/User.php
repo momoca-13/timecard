@@ -43,7 +43,25 @@ class User extends Authenticatable
     ];
 
         
-    public static function isAdmin(){
+    public function isAdmin(){
         return $this->role == 1;
     }   
+
+    public function getAttendanceStatus(){
+        $status=$this->attendance_status;
+        $display_status = '';
+        if($status == 0){
+            $display_status = '勤務外';
+        }elseif ($status == 1){
+            $display_status = '出勤中';
+         }elseif ($status == 2){
+             $display_status = '休憩中';
+         }else {
+             $display_status = '退勤済';
+
+        }
+        return $display_status;
+      
 }
+    }   
+

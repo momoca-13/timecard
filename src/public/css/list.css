@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(240, 239, 242, 1);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    width: 50%;
+}
+
+
+.top-header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}

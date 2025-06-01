@@ -1,0 +1,55 @@
+body {
+    background-color: rgba(240, 239, 242, 1);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    width: 50%;
+}
+
+
+.top-header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+p {
+    text-align: center;
+}
+
+.display {
+    margin:100px auto 0;
+}
+
+.status {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(200, 200, 200, 1);
+    color: rgba(105, 105, 105, 1);
+}
+
+.date {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.hour {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
