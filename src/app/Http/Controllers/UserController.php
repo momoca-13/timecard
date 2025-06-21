@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+
 class UserController extends Controller
 {
     public function register()
@@ -13,7 +14,7 @@ class UserController extends Controller
   $display_status = $user->getAttendanceStatus();
   $date = new \DateTime();
   $hour = $date->format('H');
-  $minite = $date->format('i');
+  $minute = $date->format('i');
   $attendance_date = $date->format('Y年m月d日');
   $week = [
   '日', //0
@@ -27,7 +28,7 @@ class UserController extends Controller
 
   $day_of_week = $week[date('w')];
 
-  return view('attendance/user', compact('display_status','attendance_date','day_of_week','hour','minite'));
+  return view('attendance/user', compact('display_status','attendance_date','day_of_week','hour','minute'));
    
 }
 

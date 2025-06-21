@@ -22,10 +22,10 @@ class CreateApplicationsTable extends Migration
             $table->tinyInteger('status');
             $table->time('new_work_start');
             $table->time('new_work_end');
-            $table->time('new_break_start');
-            $table->time('new_break_end');
-            $table->time('new_break_start2');
-            $table->time('new_break_end2');
+            $table->time('new_break_start')->nullable();
+            $table->time('new_break_end')->nullable();
+            $table->time('new_break_start2')->nullable();
+            $table->time('new_break_end2')->nullable();
             $table->timestamps();
         });
     }

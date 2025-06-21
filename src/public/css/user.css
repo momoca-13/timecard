@@ -53,3 +53,16 @@ p {
     font-weight: 700;
     color: rgba(0, 0, 0, 1);
 }
+
+.header-nav__button {
+    width: 221px;
+    height: 77px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}

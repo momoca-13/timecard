@@ -60,8 +60,8 @@ class User extends Authenticatable
              $display_status = '退勤済';
 
         }
-        return $display_status;
-      
+        return $display_status;     
+    }
+
 }
-    }   
 
